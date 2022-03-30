@@ -91,7 +91,7 @@ a:hover {
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
 abbr[title] {
-  border-bottom: .1rem dotted;
+  border-bottom: 0.1rem dotted;
 }
 
 /**
@@ -391,7 +391,6 @@ ul {
 *,
 *::after,
 *::before {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -518,20 +517,20 @@ h1 {
 }
 
 .wrapper {
-  max-width: 1280px;
+  max-width: 128rem;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 4rem;
 }
 
 @media (max-width: 768px) {
   .wrapper {
-    padding: 0 30px;
+    padding: 0 3rem;
   }
 }
 
 @media (max-width: 425px) {
   .wrapper {
-    padding: 0 10px;
+    padding: 0 1rem;
   }
 }
 
@@ -547,4 +546,67 @@ h1 {
   .header__wrapper {
     height: 5rem;
   }
+}
+/*  ====================================FOOTER====================================== */
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 3rem 0;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .footer__content {
+    font-size: 2rem;
+    justify-content: center;
+  }
+}
+
+.footer__copy {
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .footer__copy {
+    margin-right: 1rem;
+  }
+}
+
+.footer__copy span {
+  margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .footer__copy span {
+    margin-right: 0.5rem;
+  }
+}
+
+.footer__copy a {
+  transition: color 0.3s ease-in-out;
+}
+
+.footer__copy a:hover {
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .footer__copy a {
+    margin-right: 0;
+  }
+}
+
+.footer__rss {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer__rss a {
+  color: #000000;
+  transition: color 0.3s ease-in-out;
+  white-space: nowrap;
+}
+
+.footer__rss a:hover {
+  color: #ffffff;
 }
