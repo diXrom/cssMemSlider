@@ -699,6 +699,12 @@ input[type="radio"] {
     text-align: center;
   }
 }
+@media (max-width: 500px) {
+  .title__text {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
 
 .meme__dots {
   display: flex;
@@ -721,6 +727,11 @@ input[type="radio"] {
 @media (max-width: 1280px) {
   .meme__dot {
     padding: 2rem 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .meme__dot {
+    padding: 1.5rem .5rem;
   }
 }
 
